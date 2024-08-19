@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 541a3c545e26e9b44b10f3f603af641c, type: 3}
+  m_Name: PathData
+  m_EditorClassIdentifier: 
+  scriptableObjectDataFolder: {fileID: 102900000, guid: 23696f5b35907a14b86b67b14f14e00c, type: 3}
+  npcSpriteLibraryFolder: {fileID: 102900000, guid: 7a4a246c0dbdb604c9bcd5b4f20db805, type: 3}
+  GoogleSheetUrl: 1EQXxT0X5rKJ8wtJx5cxrfkhreCVpJcpXNUaaZpUdfqk
+  SpreadSheetURL: https://docs.google.com/spreadsheets/d/1EQXxT0X5rKJ8wtJx5cxrfkhreCVpJcpXNUaaZpUdfqk/
+  sheets:
+  - className: NPCDataSO
+    sheetName: NPCData
+    startRow: 2
+    endRow: 6
+    key: NPC
+  GSheets:
+  - className: NPCRoutine
+    sheetName: 835695428
+    key: NPC

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f44f34fa6530c74e89b1a993c939215, type: 3}
+  m_Name: Summer
+  m_EditorClassIdentifier: 
+  season: 2
+  requiredItemDatas:
+  - {fileID: 11400000, guid: 2ac57e0a288ec8544a28a3b1f4c784b0, type: 2}
+  - {fileID: 11400000, guid: cfc48c2c83f2da34ea459e0280caaf08, type: 2}
+  - {fileID: 11400000, guid: 7bffc37d40cb14645be29a64db2f5cef, type: 2}

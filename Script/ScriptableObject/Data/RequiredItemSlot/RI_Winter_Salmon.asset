@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a5758ffa56e754c817ca2d3b2a91cf, type: 3}
+  m_Name: RI_Winter_Salmon
+  m_EditorClassIdentifier: 
+  type: 2
+  image: {fileID: 0}
+  requiredItem: {fileID: 8000131067029173183, guid: 7a5512bdb12957b49933a6ce3dee8d1f, type: 3}
+  reuqiredItemStack: 10

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a5758ffa56e754c817ca2d3b2a91cf, type: 3}
+  m_Name: RI_Winter_Gold
+  m_EditorClassIdentifier: 
+  type: 6
+  image: {fileID: 21300000, guid: ff5471ef389221e4ab5493de69fb11ee, type: 3}
+  requiredItem: {fileID: 0}
+  reuqiredItemStack: 50000
