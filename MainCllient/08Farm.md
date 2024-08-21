@@ -1,8 +1,5 @@
-# JoseonSteamParmPublic
-조선스팀팜 코드공개용 레퍼지터리
-
-- Farm
-    
+# Farm
+- 
     <aside>
     💡 **GridManager에서 모든 농사시스템을 관리**
     

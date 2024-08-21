@@ -1,8 +1,5 @@
-# JoseonSteamParmPublic
-조선스팀팜 코드공개용 레퍼지터리
-
-- NPC
-    
+# NPC    
+-
     <aside>
     💡 상속을 통해 일반  NPC와 주 NPC의 기능 분리
     State 패턴을 구현하여 상태 별 NPC 패턴 구현
@@ -10,8 +7,8 @@
     - NPC가 가져야할 기본 변수와 Component들을 상속할 클래스에 미리 구현하여 유지보수성을 확장
     - 상태 패턴을 활용하여 특정 상황에 불필요한 행동을 방지하고 보다 더 구체적으로 기능을 구현하고 확장 가능
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/83c75a39-3aba-4ba4-a792-7aefe4b07895/dc764bea-8e0a-428e-8e44-b767a3c218f9/image.png)
-    
+    ![image](https://github.com/user-attachments/assets/5bc5b55a-0cc5-4af8-9b38-0af56b3e86f0)
+
     - 코드
         
         ```csharp
@@ -92,10 +89,10 @@
     
     ‼️Routine은 일자 별 시작 시간, 끝 시간, 목적지, 최종 바라보는 방향, 행동을 저장
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/83c75a39-3aba-4ba4-a792-7aefe4b07895/5aa2c9d0-5e6e-41a8-af1f-373cac0cbee4/image.png)
-    
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/83c75a39-3aba-4ba4-a792-7aefe4b07895/65c69283-ffc9-443b-800e-86921753f0e3/image.png)
-    
+    ![image](https://github.com/user-attachments/assets/24c2e7b1-110f-4c1c-83ac-82177f4deddf)
+
+    ![image](https://github.com/user-attachments/assets/988a15e0-b95d-4853-bdae-6cc4ce47030c)
+
     - 코드
         
         ```csharp
@@ -125,8 +122,5 @@
         ```
         
     </aside>
-    
+
     </aside>
-    
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/83c75a39-3aba-4ba4-a792-7aefe4b07895/d1dcf920-b36c-4401-bcf5-298408fbf41b/image.png)
-    

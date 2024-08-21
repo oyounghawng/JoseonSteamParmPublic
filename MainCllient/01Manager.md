@@ -1,8 +1,6 @@
-# JoseonSteamParmPublic
-조선스팀팜 코드공개용 레퍼지터리
+# Managers    
 
-- Managers
-    
+-
     <aside>
     💡 **Singleton을 활용한 매니저 관리**
     
@@ -12,9 +10,9 @@
     
     - **코드의 가시성을 살리고 접근성을 높이기 위해 Managers라는 하나의 싱글톤에서 중요한 매니저들을 관리했습니다.**
     - **Scene의 이동 시, Data, UI 등을 초기화 또는 정리해야 하는 경우, Managers에서 각 매니저의 초기화 또는 정리 기능을 모아둠으로써 편리성을 얻을 수 있습니다.**
-    
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/83c75a39-3aba-4ba4-a792-7aefe4b07895/d3da1a0b-e923-4017-97c3-f0b70df70677/image.png)
-    
+
+    ![image](https://github.com/user-attachments/assets/d18becd8-9b89-44d1-8863-de91d06c16ac)
+
     📝 MonoBehaviour 상속 필요 여부에 따라 Singleton과 MonoSingleton을 상속하는 Manager를 나누어 관리합니다.
     
     ---
@@ -94,4 +92,3 @@
         
     
     </aside>
-    
