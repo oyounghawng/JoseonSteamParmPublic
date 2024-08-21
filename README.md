@@ -118,16 +118,16 @@ https://teamsparta.notion.site/1937bfd9db9e407c88e2866e8a88c642
 [목차로 돌아가기](#목차)
 
 # 클라이언트 구조
-[![image](https://github.com/user-attachments/assets/da429e80-448a-41b6-b059-e6b4755926dd)](./01Manager.md)
-[![image](https://github.com/user-attachments/assets/ffcb89ff-05e8-483a-ab96-8c33ea0f897b)](./02Player.md)
+[![image](https://github.com/user-attachments/assets/da429e80-448a-41b6-b059-e6b4755926dd)](./MainCllient/01Manager.md)
+[![image](https://github.com/user-attachments/assets/ffcb89ff-05e8-483a-ab96-8c33ea0f897b)](./MainCllient/02Player.md)
 
-[![image](https://github.com/user-attachments/assets/4afa4fac-3838-41f1-bd97-6714129d6d7e)](./03NPC.md)
-[![image](https://github.com/user-attachments/assets/e46ebf27-979c-4e77-8f66-8ad0c852515e)](./04UI.md)
+[![image](https://github.com/user-attachments/assets/4afa4fac-3838-41f1-bd97-6714129d6d7e)](./MainCllient/03NPC.md)
+[![image](https://github.com/user-attachments/assets/e46ebf27-979c-4e77-8f66-8ad0c852515e)](./MainCllient/04UI.md)
 
-[![image](https://github.com/user-attachments/assets/8a676346-1991-4445-8dcf-39ce22dedeb0)](./05Item.md)
-[![image](https://github.com/user-attachments/assets/4f807b59-b87b-4d15-86b8-5341f56f2796)](./06Data.md)
+[![image](https://github.com/user-attachments/assets/8a676346-1991-4445-8dcf-39ce22dedeb0)](./MainCllient/05Item.md)
+[![image](https://github.com/user-attachments/assets/4f807b59-b87b-4d15-86b8-5341f56f2796)](./MainCllient/06Data.md)
 
-[![image](https://github.com/user-attachments/assets/490b56e9-ab8f-423d-952c-51d90abb2466)](./07Fishing.md)
-[![image](https://github.com/user-attachments/assets/7a9f5673-a057-476e-95aa-649abbffdc9c)](./08Farm.md)
+[![image](https://github.com/user-attachments/assets/490b56e9-ab8f-423d-952c-51d90abb2466)](./MainCllient/07Fishing.md)
+[![image](https://github.com/user-attachments/assets/7a9f5673-a057-476e-95aa-649abbffdc9c)](./MainCllient/08Farm.md)
 
 [목차로 돌아가기](#목차)
