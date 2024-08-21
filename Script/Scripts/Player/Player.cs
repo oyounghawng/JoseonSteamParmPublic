@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
 
     public Action resetSlotsUI;
     public Action resetPlayerEquipItem;
-
+    public Action<float> onGoldChanged;
     public const string Seeding = "Seeding";
     public const string Building = "Building";
 

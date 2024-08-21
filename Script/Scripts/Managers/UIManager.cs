@@ -153,6 +153,11 @@ public class UIManager : MonoSingleton<UIManager>
         }
 
         ClosePopupUI();
+
+        if (popupCount <= 0)
+        {
+            Time.timeScale = 1f;
+        }
     }
 
     public void ClosePopupUI()
@@ -170,6 +175,11 @@ public class UIManager : MonoSingleton<UIManager>
     {
         while (_popupStack.Count > 0)
             ClosePopupUI();
+
+        if (popupCount <= 0)
+        {
+            Time.timeScale = 1f;
+        }
     }
 
     public void Clear()

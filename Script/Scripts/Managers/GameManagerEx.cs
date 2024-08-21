@@ -39,7 +39,8 @@ public class GameData
         }
         set
         {
-            gold += value;
+            gold = value;
+            (SceneManagerEx.Instance.CurrentScene as GameScene).player.onGoldChanged?.Invoke(gold);
             (SceneManagerEx.Instance.CurrentScene as GameScene).player.resetPlayerEquipItem?.Invoke();
         }
     }
@@ -107,23 +108,6 @@ public class GameManagerEx : Singleton<GameManagerEx>
         onChangedPlayerLocation -= SetPlayerLocation;
         onChangedPlayerLocation += SetPlayerLocation;
     }
-
-
-    //public override void Init()
-    //{
-    //    _path = Application.persistentDataPath + "/SaveData.json";
-    //    if (LoadGame())
-    //    {
-    //        isInit = true;
-    //        IsLoaded = true;
-    //        return;
-    //    }
-
-    //    SaveData = new GameData();
-    //    SaveData.villageData.Init();
-    //    SaveGame();
-    //    isInit = true;
-    //}
 
 
     #region Option

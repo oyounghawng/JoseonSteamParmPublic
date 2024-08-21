@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using static Define;
 
 public class UI_GameScene : UI_Scene
 {
@@ -15,10 +16,6 @@ public class UI_GameScene : UI_Scene
     enum GameObjects
     {
         QuickSlotPanel,
-    }
-    enum Buttons
-    {
-        OpenShop
     }
 
     private Player player;
@@ -39,14 +36,13 @@ public class UI_GameScene : UI_Scene
     {
         base.Init();
         Bind<GameObject>(typeof(GameObjects));
-        Bind<Button>(typeof(Buttons));
 
         player = (SceneManagerEx.Instance.CurrentScene as GameScene).player;
 
         player.resetPlayerEquipItem += ResetQuickSlotActive;
         player.resetSlotsUI += ResetQuickSlotUI;
+        player.onGoldChanged += SetGold;
 
-        GetButton((int)Buttons.OpenShop).gameObject.BindEvent(OpenShop);
         SetQuickSlot();
         ResetUI();
     }
@@ -55,11 +51,6 @@ public class UI_GameScene : UI_Scene
     {
         TimeManager.Instance.EndDay();
     }
-    private async void OpenShop(PointerEventData evt)
-    {
-        await UIManager.Instance.ShowTaskPopupUI<UI_Shop>();
-    }
-
     private void OnEnable()
     {
         TimeManager.Instance.onChangedTime -= SetTime;
@@ -72,7 +63,6 @@ public class UI_GameScene : UI_Scene
         TimeManager.Instance.onChangedSeason += SetSeason;
         TimeManager.Instance.onChangedWeather += SetWeather;
     }
-
 
     private void Update()
     {
@@ -181,18 +171,42 @@ public class UI_GameScene : UI_Scene
 
     private void SetSeason(int season)
     {
-        string sSeason = Enum.GetName(typeof(Define.Season), season);
-        txt_Season.text = sSeason;
+        string seasonName = season switch
+        {
+            1 => "봄",
+            2 => "여름",
+            3 => "가을",
+            4 => "겨울",
+            _ => "알 수 없음"
+        };
+        txt_Season.text = seasonName;
     }
 
     private void SetDay(int day)
     {
-        string sDay = Enum.GetName(typeof(Define.Day), day % 7);
+        string sDay = (day % 7) switch
+        {
+            1 => "월",
+            2 => "화",
+            3 => "수",
+            4 => "목",
+            5 => "금",
+            6 => "토",
+            0 => "일",
+            _ => "알 수 없음"
+        };
         txt_Day.text = $"{sDay}. {day}";
     }
     private void SetWeather(int weather)
     {
-        string sWeahter = Enum.GetName(typeof(Define.Weather), (Define.Weather)weather);
+        string sWeahter = weather switch
+        {
+            1 => "맑음",
+            2 => "비",
+            3 => "천둥번개",
+            4 => "눈",
+            _ => "알 수 없음"
+        };
         txt_Weather.text = $"{sWeahter}";
     }
 
@@ -201,6 +215,11 @@ public class UI_GameScene : UI_Scene
         int hour = allTime / 60;
         int minute = allTime % (60 * hour);
         txt_time.text = $"{hour.ToString("D2")}:{minute.ToString("D2")}";
+    }
+
+    private void SetGold(float gold)
+    {
+        txt_Gold.text = gold.ToString();
     }
 
 }

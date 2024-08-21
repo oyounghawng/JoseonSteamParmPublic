@@ -60,6 +60,7 @@ public class GameScene : BaseScene
 
         while (!TimeManager.Instance.isInit) await Task.Yield();
         Managers.Game.GameStart();
+        Managers.Resource.Instantiate("Tutorial");
     }
     public override void Clear()
     {

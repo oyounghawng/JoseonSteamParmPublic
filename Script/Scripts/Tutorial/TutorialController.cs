@@ -65,6 +65,7 @@ public class TutorialController : MonoBehaviour
         currentTutorial = null;
         (Managers.Scene.CurrentScene as GameScene).player.GetComponent<PlayerInputController>().isMovementRestricted = false;
         Debug.Log("Completed All");
+        Managers.Resource.Destroy(this.gameObject.transform.parent.gameObject);
     }
 
     #region FarmTutorial

@@ -47,6 +47,11 @@ public class TutorialAction : TutorialBase
 
     public override void Execute(TutorialController controller)
     {
+        if (type == TutorialTpye.Seed)
+        {
+            if (!(Managers.Scene.CurrentScene as GameScene).player.HasPlayerItem(potatoSeed.GetComponent<ItemObject>().itemObjectData))
+                (Managers.Scene.CurrentScene as GameScene).player.AddItem(potatoSeed.GetComponent<ItemObject>().itemObjectData);
+        }
         if (type == TutorialTpye.Harvest)
         {
             if (curCheck(targetObject))

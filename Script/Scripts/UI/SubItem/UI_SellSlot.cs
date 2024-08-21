@@ -13,10 +13,9 @@ public class UI_SellSlot : UI_ShopSlot
     }
     protected override void OnClickEvent(PointerEventData eventData)
     {
-        //있는지를 탐색
-        //GameManagerEx.Instance.SaveData.Gold = data.sellPrice;
         (SceneManagerEx.Instance.CurrentScene as GameScene).player.RemoveItem(itemOjbect.itemObjectData);
 
+        Managers.Game.SaveData.Gold += itemOjbect.itemObjectData.itemData.sellPrice;
         OnItemSold?.Invoke();
     }
 }
